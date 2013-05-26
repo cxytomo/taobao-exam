@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lan="en"> 
+	<head> 
+		<title>未知大小图片在已知大小容器水平/垂直居中</title>
+		<meta charset="UTF-8"> 
+		<style type="text/css"> 
+		#first {
+		/*非IE的主流浏览器识别的垂直居中的方法*/
+		display: table-cell;
+		vertical-align:middle;
+
+		/*设置水平居中*/
+		text-align:center;
+
+		/* 针对IE的Hack */
+		*display: block;
+		*font-size: 305px;/*约为高度的0.873，200*0.873 约为175*/
+		*font-family:Arial;/*防止非utf-8引起的hack失效问题，如gbk编码*/
+
+		width:200px;
+		height:200px;
+		border: 1px solid #080808;
+		}
+
+		#first img {
+		/*设置图片垂直居中*/
+		vertical-align:middle;
+		border: 1px solid #070707;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="first">
+			<img src="http://www.clker.com/cliparts/h/E/u/o/b/5/snow-flake-icon2-md.png" alt="flake" />
+		</div> 
+	</body>
+</html>
